@@ -148,14 +148,14 @@ $(document).ready(function() {
 
     $("#btn-change-attr").click(function() {
         var currentHref = $("#social-link").attr("href");
-        if (currentHref === "https://github.com") {
-            $("#social-link").attr("href", "https://instagram.com");
-            $("#social-link").text("Visit Instagram Profile");
+        if (currentHref === "https://github.com/arabdrakh") {
+            $("#social-link").attr("href", "https://subnautica.com/en");
+            $("#social-link").text("Visit Subnautica");
             $(this).text("Switch to GitHub");
         } else {
-            $("#social-link").attr("href", "https://github.com");
-            $("#social-link").text("Visit GitHub Profile");
-            $(this).text("Switch to Insta");
+            $("#social-link").attr("href", "https://github.com/arabdrakh");
+            $("#social-link").text("Visit GitHub");
+            $(this).text("Switch to game");
         }
     });
 
