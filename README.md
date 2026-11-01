@@ -1,89 +1,53 @@
-# Assignment #6: jQuery (Selectors, Effects, Animations)
+Assignment 6 Aruzhan Abdrakhmanova IT-2501 Site: https://arabdrakh.github.io/front6/
 
-- **Name:** Aruzhan Abdrakhmanova
-- **Group:** [Your Group]
-- **Repository:** https://github.com/arabdrakh/front6
-- **GitHub Pages:** https://arabdrakh.github.io/front6/
+Task 0. Setup
+Included jQuery from CDN, wrote a $(document).ready() function, and tested by logging "jQuery is ready!" in the console.
 
----
+![alt text](screenshots/task0.png)
 
-## Part 1. Getting Started with jQuery
+Task 1. Selectors & CSS
+Created a profile section with my name, headline, and intro. Selected elements using tag, ID, and class selectors, updated headline dynamically using .text() and .html(), applied styles with .css(), and added theme switch buttons.
 
-### Task 0. Setup
-- Connected jQuery 3.7.1 via official CDN.
-- Created `$(document).ready()` handler inside `script.js`.
-- Verified execution by outputting `"jQuery is ready!"` to the browser console.
+![alt text](screenshots/task1.png)
 
-### Task 1. Selectors & CSS
-- Added portfolio profile section displaying author name, headline, and an introductory text.
-- Used tag (`h1`, `h2`), ID (`#headline`, `#portfolio-title`), and class (`.intro`) selectors.
-- Updated headline dynamically via `.text()` and `.html()`.
-- Modified CSS properties directly using `.css()`.
-- Implemented light and dark theme switching using jQuery `.css()` styling.
+Task 2. Visibility Methods
+Created an "About Me" section with bio, status message, and fun facts. Added Hide, Show, and Toggle buttons to control visibility using .hide(), .show(), and .toggle().
 
-![Part 1 Screenshot](screenshots/part1_setup_selectors.png)
+![alt text](screenshots/task2.png)
 
----
+Task 3. Fade Methods
+Created an image gallery featuring profile, hobby, and travel photos. Added Fade In, Fade Out, and Fade Toggle buttons using .fadeIn(), .fadeOut(), and .fadeToggle().
 
-## Part 2. jQuery Effects
+![alt text](screenshots/task3.png)
 
-### Task 2. Visibility Methods
-- Created an "About Me" section containing biography, personal fun facts, and current status message.
-- Implemented three control buttons: **Hide**, **Show**, and **Toggle** using `.hide()`, `.show()`, and `.toggle()`.
+Task 4. Slide Methods
+Created collapsible panels under clickable headings. Implemented smooth slide effects using .slideToggle() on heading click, and control buttons using .slideUp(), .slideDown(), and .slideToggle().
 
-![Part 2 Task 2 Screenshot](screenshots/part2_visibility_methods.png)
+![alt text](screenshots/task4.png)
 
-### Task 3. Fade Methods
-- Created an image gallery featuring uploaded images: profile picture, hobby, and travel photos.
-- Implemented **Fade In**, **Fade Out**, and **Fade Toggle** buttons using `.fadeIn()`, `.fadeOut()`, and `.fadeToggle()`.
+Part 3: DOM Manipulation with jQuery
 
-![Part 2 Task 3 Screenshot](screenshots/part2_fade_methods.png)
+Task 5. Add & Remove Elements
+Created an initial list with an input field to enter new items with validation against empty input. Implemented "Add" (.append()), "Prepend" (.prepend()), and "Remove" (.remove()) buttons.
 
-### Task 4. Slide Methods
-- Built collapsible panels under three headings: "My Favorite Music", "My Favorite Movie", and "My Favorite Subject".
-- Enabled interactive smooth opening/closing using `.slideToggle()` upon heading click.
-- Provided global control buttons applying `.slideUp()`, `.slideDown()`, and `.slideToggle()`.
+![alt text](screenshots/task5.png)
 
-![Part 2 Task 4 Screenshot](screenshots/part2_slide_methods.png)
+Task 6. Modifying Attributes
+Added an external link and a button that dynamically updates the link destination and text using .attr().
 
----
+![alt text](screenshots/task6.png)
 
-## Part 3. DOM Manipulation with jQuery
+Task 7. Form Interaction
+Created a form with Name and Email inputs. Added live feedback below the form displaying typed input in real time using .val() and .text().
 
-### Task 5. Add & Remove Elements
-- Created an initial list of technical skills (HTML5, CSS3, JavaScript, Git & GitHub).
-- Added an input field with validation to prevent adding empty values.
-- Implemented **Add Skill** (`.append()`), **Prepend Skill** (`.prepend()`), and **Remove Skill** (`.remove()`).
+![alt text](screenshots/task7.png)
 
-### Task 6. Modifying Attributes
-- Included an external profile link pointing to GitHub.
-- Created a toggle button that modifies the destination `href` and text using `.attr()`.
+Part 4: Animations
 
-### Task 7. Form Interaction
-- Created an interactive contact form with Name and Email input fields.
-- Implemented live feedback display below the form using `.val()` and `.text()` responding to `input` events.
+Task 8. Basic Animation
+Created visual progress bars initially set to 0% width. Added an "Animate" button using jQuery .animate() to expand bars to different percentages and smoothly animate them back to 0% on subsequent click.
 
-![Part 3 Screenshot](screenshots/part3_dom_manipulation.png)
+![alt text](screenshots/task8.png)
 
----
-
-## Part 4. Animations
-
-### Task 8. Basic Animation
-- Extended technical skills representation with visual progress skill bars for HTML, CSS, and JavaScript.
-- Initial width of all skill bars is set to `0%`.
-- Clicking **Animate My Skills** animates bars to target widths (90%, 80%, 70%) using jQuery `.animate()`.
-- Clicking the button again smoothly animates bars back to `0%` width.
-
-![Part 4 Screenshot](screenshots/part4_animations.png)
-
----
-
-## Summary of Work Process
-
-1. **Project Architecture**: Set up a clean file structure with `index.html`, `style.css`, and `script.js`.
-2. **jQuery Integration**: Loaded jQuery via CDN and verified readiness via `$(document).ready()`.
-3. **DOM & Styling**: Applied jQuery selectors (tag, ID, class) to modify content and dynamic inline CSS for styling and theme toggle.
-4. **Visual Effects**: Built interactive controls utilizing visibility methods (`hide`, `show`, `toggle`), fading effects (`fadeIn`, `fadeOut`, `fadeToggle`), and sliding accordions (`slideUp`, `slideDown`, `slideToggle`).
-5. **DOM Manipulation & Form**: Handled dynamic DOM element additions, deletions with validation, attribute changes using `.attr()`, and real-time form two-way reflection.
-6. **Custom Animations**: Implemented bidirectional animations with `.animate()` to visualize skill proficiencies.
+Summary
+In this assignment, I practiced jQuery fundamentals including DOM selection and manipulation, effects, and custom animations. I used tag, ID, and class selectors, implemented visibility, fade, and slide methods, dynamically updated attributes, handled live form inputs, and created interactive animations using jQuery methods.
