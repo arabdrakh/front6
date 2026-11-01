@@ -46,3 +46,40 @@ button {
 button:hover {
     background-color: #dde2e6;
 }
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.gallery img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.accordion {
+    margin-top: 10px;
+}
+
+.accordion-header {
+    background-color: #e9ecef;
+    padding: 10px 14px;
+    margin: 6px 0 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.accordion-panel {
+    background-color: #fafafa;
+    padding: 12px 14px;
+    border: 1px solid #e9ecef;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 6px;
+}
