@@ -2,8 +2,8 @@
 
 - **Name:** Aruzhan Abdrakhmanova
 - **Group:** [Your Group]
-- **Repository:** https://github.com/arabdrakh/front6-1
-- **GitHub Pages:** https://arabdrakh.github.io/front6-1/
+- **Repository:** https://github.com/arabdrakh/front6
+- **GitHub Pages:** https://arabdrakh.github.io/front6/
 
 ---
 
