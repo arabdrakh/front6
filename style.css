@@ -83,3 +83,54 @@ button:hover {
     border-radius: 0 0 4px 4px;
     margin-bottom: 6px;
 }
+
+.input-inline {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.live-preview {
+    background-color: #eef2f7;
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 15px;
+}
+
+.live-preview p {
+    margin-bottom: 5px;
+}
+
+.live-preview p:last-child {
+    margin-bottom: 0;
+}
+
+#social-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#social-link:hover {
+    text-decoration: underline;
+}

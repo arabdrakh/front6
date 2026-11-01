@@ -37,6 +37,16 @@ $(document).ready(function() {
             "border-color": "#475569",
             "color": "#e0e0e0"
         });
+        $(".live-preview").css({
+            "background-color": "#252d38",
+            "border-color": "#475569",
+            "color": "#ffffff"
+        });
+        $("input").css({
+            "background-color": "#1f242d",
+            "color": "#ffffff",
+            "border-color": "#475569"
+        });
     });
 
     $("#btn-light-theme").click(function() {
@@ -61,6 +71,16 @@ $(document).ready(function() {
             "background-color": "#fafafa",
             "border-color": "#e9ecef",
             "color": "#333333"
+        });
+        $(".live-preview").css({
+            "background-color": "#eef2f7",
+            "border-color": "#d0d7de",
+            "color": "#333333"
+        });
+        $("input").css({
+            "background-color": "#ffffff",
+            "color": "#333333",
+            "border-color": "#cccccc"
         });
     });
 
@@ -102,5 +122,48 @@ $(document).ready(function() {
 
     $("#btn-slide-toggle").click(function() {
         $(".accordion-panel").slideToggle();
+    });
+
+    $("#btn-append-skill").click(function() {
+        var skill = $("#skill-input").val().trim();
+        if (skill !== "") {
+            $("#skill-list").append("<li>" + skill + "</li>");
+            $("#skill-input").val("");
+        }
+    });
+
+    $("#btn-prepend-skill").click(function() {
+        var skill = $("#skill-input").val().trim();
+        if (skill !== "") {
+            $("#skill-list").prepend("<li>" + skill + "</li>");
+            $("#skill-input").val("");
+        }
+    });
+
+    $("#btn-remove-skill").click(function() {
+        $("#skill-list li").last().remove();
+    });
+
+    $("#btn-change-attr").click(function() {
+        var currentHref = $("#social-link").attr("href");
+        if (currentHref === "https://github.com") {
+            $("#social-link").attr("href", "https://linkedin.com");
+            $("#social-link").text("Visit LinkedIn Profile");
+            $(this).text("Switch to GitHub");
+        } else {
+            $("#social-link").attr("href", "https://github.com");
+            $("#social-link").text("Visit GitHub Profile");
+            $(this).text("Switch to LinkedIn");
+        }
+    });
+
+    $("#form-name").on("input", function() {
+        var nameVal = $(this).val();
+        $("#live-name").text(nameVal);
+    });
+
+    $("#form-email").on("input", function() {
+        var emailVal = $(this).val();
+        $("#live-email").text(emailVal);
     });
 });
