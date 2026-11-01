@@ -47,6 +47,7 @@ $(document).ready(function() {
             "color": "#ffffff",
             "border-color": "#475569"
         });
+        $(".skill-track").css("background-color", "#3b4554");
     });
 
     $("#btn-light-theme").click(function() {
@@ -82,6 +83,7 @@ $(document).ready(function() {
             "color": "#333333",
             "border-color": "#cccccc"
         });
+        $(".skill-track").css("background-color", "#e9ecef");
     });
 
     $("#btn-hide-status").click(function() {
@@ -165,5 +167,21 @@ $(document).ready(function() {
     $("#form-email").on("input", function() {
         var emailVal = $(this).val();
         $("#live-email").text(emailVal);
+    });
+
+    var isSkillsAnimated = false;
+
+    $("#btn-animate-skills").click(function() {
+        if (!isSkillsAnimated) {
+            $("#fill-html").animate({ width: "90%" }, 800);
+            $("#fill-css").animate({ width: "80%" }, 800);
+            $("#fill-js").animate({ width: "70%" }, 800);
+            isSkillsAnimated = true;
+        } else {
+            $("#fill-html").animate({ width: "0%" }, 800);
+            $("#fill-css").animate({ width: "0%" }, 800);
+            $("#fill-js").animate({ width: "0%" }, 800);
+            isSkillsAnimated = false;
+        }
     });
 });

@@ -134,3 +134,28 @@ input[type="email"] {
 #social-link:hover {
     text-decoration: underline;
 }
+
+.skill-bar-wrapper {
+    margin-bottom: 12px;
+}
+
+.skill-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-track {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-fill {
+    width: 0;
+    height: 100%;
+    background-color: #0d6efd;
+    border-radius: 4px;
+}
