@@ -1,6 +1,6 @@
 # Assignment #6: jQuery (Selectors, Effects, Animations)
 
-- **Name:** Nurasyl Arabdrakh
+- **Name:** Aruzhan Abdrakhmanova
 - **Group:** [Your Group]
 - **Repository:** https://github.com/arabdrakh/front6-1
 - **GitHub Pages:** https://arabdrakh.github.io/front6-1/
