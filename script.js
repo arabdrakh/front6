@@ -47,7 +47,7 @@ $(document).ready(function() {
             "color": "#ffffff",
             "border-color": "#475569"
         });
-        $(".skill-track").css("background-color", "#3b4554");
+        $(".-track, .skill-track").css("background-color", "#3b4554");
     });
 
     $("#btn-light-theme").click(function() {
@@ -83,7 +83,7 @@ $(document).ready(function() {
             "color": "#333333",
             "border-color": "#cccccc"
         });
-        $(".skill-track").css("background-color", "#e9ecef");
+        $(".-track, .skill-track").css("background-color", "#e9ecef");
     });
 
     $("#btn-hide-status").click(function() {
@@ -126,36 +126,36 @@ $(document).ready(function() {
         $(".accordion-panel").slideToggle();
     });
 
-    $("#btn-append-skill").click(function() {
-        var skill = $("#skill-input").val().trim();
-        if (skill !== "") {
-            $("#skill-list").append("<li>" + skill + "</li>");
-            $("#skill-input").val("");
+    $("#btn-append-, #btn-append-skill").click(function() {
+        var item = $("#-input, #skill-input").val().trim();
+        if (item !== "") {
+            $("#-list, #skill-list").append("<li>" + item + "</li>");
+            $("#-input, #skill-input").val("");
         }
     });
 
-    $("#btn-prepend-skill").click(function() {
-        var skill = $("#skill-input").val().trim();
-        if (skill !== "") {
-            $("#skill-list").prepend("<li>" + skill + "</li>");
-            $("#skill-input").val("");
+    $("#btn-prepend-, #btn-prepend-skill").click(function() {
+        var item = $("#-input, #skill-input").val().trim();
+        if (item !== "") {
+            $("#-list, #skill-list").prepend("<li>" + item + "</li>");
+            $("#-input, #skill-input").val("");
         }
     });
 
-    $("#btn-remove-skill").click(function() {
-        $("#skill-list li").last().remove();
+    $("#btn-remove-, #btn-remove-skill").click(function() {
+        $("#-list li, #skill-list li").last().remove();
     });
 
     $("#btn-change-attr").click(function() {
         var currentHref = $("#social-link").attr("href");
         if (currentHref === "https://github.com") {
-            $("#social-link").attr("href", "https://linkedin.com");
-            $("#social-link").text("Visit LinkedIn Profile");
+            $("#social-link").attr("href", "https://instagram.com");
+            $("#social-link").text("Visit Instagram Profile");
             $(this).text("Switch to GitHub");
         } else {
             $("#social-link").attr("href", "https://github.com");
             $("#social-link").text("Visit GitHub Profile");
-            $(this).text("Switch to LinkedIn");
+            $(this).text("Switch to Insta");
         }
     });
 
@@ -169,20 +169,19 @@ $(document).ready(function() {
         $("#live-email").text(emailVal);
     });
 
-    var isSkillsAnimated = false;
+    var isAnimated = false;
 
-    $("#btn-animate-skills").click(function() {
-        if (!isSkillsAnimated) {
+    $("#btn-animate-s, #btn-animate-skills").click(function() {
+        if (!isAnimated) {
             $("#fill-html").animate({ width: "90%" }, 800);
             $("#fill-css").animate({ width: "80%" }, 800);
             $("#fill-js").animate({ width: "70%" }, 800);
-            isSkillsAnimated = true;
+            isAnimated = true;
         } else {
             $("#fill-html").animate({ width: "0%" }, 800);
             $("#fill-css").animate({ width: "0%" }, 800);
             $("#fill-js").animate({ width: "0%" }, 800);
-            isSkillsAnimated = false;
+            isAnimated = false;
         }
     });
 });
-
